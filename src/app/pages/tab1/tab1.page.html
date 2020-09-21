@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+    <div class="container">
+
+        <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide *ngFor="let animal of animales" (click)="reproducir( animal )">
+                <div class="mano">
+                    <img src="assets/img/mano.png">
+                </div>
+                <div class="flecha">
+                    <img src="assets/img/flecha.png">
+                </div>
+                <img class="img" src="{{ animal.img }}">
+            </ion-slide>
+        </ion-slides>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

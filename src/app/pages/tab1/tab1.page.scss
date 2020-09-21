@@ -1,0 +1,22 @@
+.nombre {
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    font-size: 9vh;
+    object-fit: contain;
+    font-family: 'fontBaby';
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #90efff, #9be7ff, #bbdbff, #e1ccff, #ffbfee); // background-color: rgb(176, 241, 250);
+    // background-color: rgb(154, 234, 245);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

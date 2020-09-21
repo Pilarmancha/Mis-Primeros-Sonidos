@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+
+    <div class="container">
+        <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide *ngFor="let letra of letras" (click)="reproducir( letra )">
+                <div class="mano">
+                    <img src="assets/img/mano.png">
+                </div>
+                <img class="img" src="{{ letra.img }}">
+                <div class="flecha">
+                    <img src="assets/img/flecha.png">
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </div>
+
+</ion-content>

@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide *ngFor="let color of colores" (click)="reproducir( color )" [ngStyle]="{'background-color': color.color}">
+            <div class="mano">
+                <img src="assets/img/mano.png">
+            </div>
+            <div class="flecha">
+                <img src="assets/img/flecha.png">
+            </div>
+        </ion-slide>
+    </ion-slides>
+
+</ion-content>
